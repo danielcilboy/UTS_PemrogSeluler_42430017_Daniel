@@ -19,7 +19,7 @@ Aplikasi ini dibangun untuk memenuhi Ujian Tengah Semester (UTS) mata kuliah Pem
 ### 1. Halaman Login (Responsif)
 | Mode Portrait | Mode Landscape |
 | :---: | :---: |
-| ![https://1drv.ms/i/c/5e9899aa50abdb6a/IQC1V65fEzAKR6WWFC5QUAMQAfHZAZeH46X3pXku1H2oxw8?e=8qlP83](masukkan_link_gambar_portrait_disin.jpg) | ![Login Landscape](masukkan_link_gambar_landscape_disini.jpg) |
+| ![Login Portrait](potrait.png) | ![Login Landscape](masukkan_link_gambar_landscape_disini.jpg) |
 
 ### 2. Halaman Panel Generator
 | Input Data | Hasil Generate (If-Else & Loop) |
