@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Daftar dan Penilaian Mahasiswa</string>
+    <string name="logo_aplikasi">Logo Aplikasi</string>
+    <string name="welcome_user">Selamat Datang, %1$s!</string>
+    <string name="welcome_admin">Selamat Datang, Admin!</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_nama_dosen">Nama Dosen</string>
+    <string name="hint_matkul">Mata Kuliah</string>
+    <string name="hint_jumlah_mhs">Jumlah Mahasiswa</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_generate">Generate Laporan</string>
+    <string name="login_success">Halo, %1$s! Anda berhasil login.</string>
+    <string name="login_empty">Silakan isi username dulu ya!</string>
+    <string name="status_besar">Kelas Besar</string>
+    <string name="status_reguler">Kelas Reguler</string>
+    <string name="report_header">LAPORAN PERKULIAHAN</string>
+    <string name="report_dosen">Dosen: %1$s</string>
+    <string name="report_matkul">Mata Kuliah: %1$s</string>
+    <string name="report_status">Status: %1$s</string>
+    <string name="report_divider">---------------------------</string>
+    <string name="report_absensi_header">Daftar Absensi:</string>
+    <string name="report_absensi_item">%1$d. Mahasiswa Ke-%1$d [..........]</string>
+    <string name="error_empty_fields">Harap lengkapi semua data!</string>
+</resources>

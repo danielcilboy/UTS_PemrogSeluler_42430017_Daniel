@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_admin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Fixed the render issue by limiting the max width of the text field to 488dp
+             as recommended by Material Design. Changed layout_width to 0dp (match_constraint)
+             and added horizontal constraints and layout_constraintWidth_max. -->
+        <EditText
+            android:id="@+id/etNamaDosen"
+            android:layout_width="381dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="52dp"
+            android:autofillHints="name"
+            android:hint="@string/hint_nama_dosen"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Applied the same fix to other text fields for consistency and to avoid similar issues -->
+
+        <EditText
+            android:id="@+id/etMatkul"
+            android:layout_width="394dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="none"
+            android:hint="@string/hint_matkul"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etNamaDosen"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Fixed render issue: Material Design recommends buttons to be no wider than 320dp.
+             Changed app:layout_constraintWidth_max from 488dp to 320dp. -->
+        <EditText
+            android:id="@+id/etJumlahMhs"
+            android:layout_width="400dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="none"
+            android:hint="@string/hint_jumlah_mhs"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etMatkul"
+            app:layout_constraintWidth_max="488dp" />
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_generate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etJumlahMhs"
+            app:layout_constraintWidth_max="320dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGenerate"
+            app:layout_constraintWidth_max="488dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
